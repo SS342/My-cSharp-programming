@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Programm 1" Height="350" Width="500" WindowStyle="ThreeDBorderWindow">
+    <Grid x:Name="MainRoot" Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="4" x:Name="textLabel" FontSize="30"/>
+        <Button Grid.Row="1" Grid.Column="0">1</Button>
+        <Button Grid.Row="1" Grid.Column="1">2</Button>
+        <Button Grid.Row="1" Grid.Column="2">3</Button>
+        <Button Grid.Row="1" Grid.Column="3">+</Button>
+        <Button Grid.Row="2" Grid.Column="0">4</Button>
+        <Button Grid.Row="2" Grid.Column="1">5</Button>
+        <Button Grid.Row="2" Grid.Column="2">6</Button>
+        <Button Grid.Row="2" Grid.Column="3">-</Button>
+        <Button Grid.Row="3" Grid.Column="0">7</Button>
+        <Button Grid.Row="3" Grid.Column="1">8</Button>
+        <Button Grid.Row="3" Grid.Column="2">9</Button>
+        <Button Grid.Row="3" Grid.Column="3">*</Button>
+        <Button Grid.Row="4" Grid.Column="0">0</Button>
+        <Button Grid.Row="4" Grid.Column="1">=</Button>
+        <Button Grid.Row="4" Grid.Column="2">AC</Button>
+        <Button Grid.Row="4" Grid.Column="3">/</Button>
+    </Grid>
+</Window>
