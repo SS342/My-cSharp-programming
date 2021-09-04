@@ -1,0 +1,31 @@
+﻿<Window x:Class="UsersApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="App for user" Height="600" Width="800">
+    <Grid Background="#ffdadada">
+        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="60" Color="LightGray" ShadowDepth="0" />
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Hello!" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
+
+                <Grid Margin="0 0 0 30">
+                    <Button HorizontalAlignment="Left" Content="Registration" />
+                    <Button HorizontalAlignment="Right" Content="Enter" Style="{StaticResource MaterialDesignFlatButton}"/>
+                </Grid>
+
+                <TextBox x:Name="textBoxEmail" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.Hint="Input Login" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox x:Name="passwordBox_1" materialDesign:HintAssist.Hint="Input Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <PasswordBox x:Name="passwordBox_2" materialDesign:HintAssist.Hint="Repeat Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <Button Content="Register" Margin="0 20" Click="Button_Reg_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
