@@ -1,0 +1,18 @@
+using System;
+
+namespace ca1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Input Your name: ");
+
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Name: " + name);
+
+            Console.Read();
+        }
+    }
+}
